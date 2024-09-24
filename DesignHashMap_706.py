@@ -2,6 +2,8 @@ class MyHashMap:
 
     #time complexity = o(1)
     #space complexity = o(n)
+    #used a fixed size list to store key value pairs. Put stores a key value pair based on the key. 
+    #get retrieves a value based on the key or returns -1 if value doesn't exsit. remove deletes a value by setting the value to none for a key.
     def __init__(self):
         self.data = [None] * 10000000
 
