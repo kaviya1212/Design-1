@@ -2,6 +2,9 @@ class MinStack:
 
     #time complexity = o(1)
     #space complexity = o(n)
+    #used two stacks, stack to keep track of the original stack input and min stack to keep track of the minimum value in the stack. 
+    #When a value is pushed its added to stack and min stack if minstack is empty or if the value is less than the last value in minstack. Mimimum will always be the last element in min stack.
+    #pop removes value from both stacks, top returns the last element in stack and getmin returns the last element in min stack (minimum).
     def __init__(self):
         self.stack = [] 
         self.min_stack = [] #min_stack to store the minimum stack value
